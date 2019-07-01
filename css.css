@@ -1,5 +1,6 @@
 html {
     background-color: whitesmoke;
+    font-family: Helvetica Neue;
 }
 body {
     max-width: 800px;
@@ -10,6 +11,7 @@ body {
 /* CSS for the top 'peterwroot.co.uk' bar */
 #pageTopBar {
     height: 40px;
+    line-height: 30px;
     background-color: #212121;
     color: whitesmoke;
     padding: 5px;
@@ -20,7 +22,7 @@ body {
     color: whitesmoke;
 }
 
-#pageTopBar h6 {
+#pageTopBar h4 {
     margin: 0px;
 }
 
@@ -47,7 +49,6 @@ body {
 /* CSS for page footer*/
 
 #pageFooter{
-    
     bottom: 0;
     width: 800px;
     padding: 5px;
@@ -64,4 +65,8 @@ body {
 
 #pageFooter a{
     color: whitesmoke;
+}
+
+hr{
+    max-width: 700px;
 }
