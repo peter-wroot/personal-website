@@ -1,0 +1,35 @@
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* CSS for the top 'peterwroot.co.uk' bar */
+#pageTopBar{
+    height: 40px;
+    background-color: #212121;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+#pageTopBar a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#pageTopBar h6{
+    margin: 0px;
+}
+
+.topBarNavItem{
+    display: inline-block;
+    padding: 5px;
+}
+
+#topBarHomeLink{
+    float: left;
+    padding: 5px;
+}
+
+#pageTopBarNavigation{
+    float: right;
+}
