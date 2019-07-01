@@ -1,35 +1,62 @@
-body{
+html {
+    background-color: whitesmoke;
+}
+body {
     max-width: 1000px;
     margin: 0 auto;
+    background-color: white;
 }
 
 /* CSS for the top 'peterwroot.co.uk' bar */
-#pageTopBar{
+#pageTopBar {
     height: 40px;
     background-color: #212121;
     color: whitesmoke;
     padding: 5px;
 }
 
-#pageTopBar a{
+#pageTopBar a {
     text-decoration: none;
     color: whitesmoke;
 }
 
-#pageTopBar h6{
+#pageTopBar h6 {
     margin: 0px;
 }
 
-.topBarNavItem{
+.topBarNavItem {
     display: inline-block;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
-#topBarHomeLink{
+#topBarHomeLink {
     float: left;
     padding: 5px;
 }
 
-#pageTopBarNavigation{
+#pageTopBarNavigation {
     float: right;
+}
+
+/* CSS for main page body */
+
+#pageBody{
+    padding: 10px;
+}
+
+/* CSS for page footer*/
+
+#pageFooter{
+    position: absolute;
+    bottom: 0;
+    width: 1000px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #212121;
+    color: whitesmoke;
+}
+
+#pageFooter p{
+    padding: 0px;
+    margin: 0px;
 }
