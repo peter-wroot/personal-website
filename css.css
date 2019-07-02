@@ -52,6 +52,7 @@ body {
     bottom: 0;
     width: 800px;
     padding: 5px;
+    height: 25px;
     margin: 0px;
     background-color: #212121;
     color: whitesmoke;
@@ -69,4 +70,11 @@ body {
 
 hr{
     max-width: 700px;
+}
+
+#footerRight{
+    float: right;
+}
+#footerLeft{
+    float: left;
 }
