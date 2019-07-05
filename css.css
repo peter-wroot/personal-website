@@ -1,5 +1,5 @@
 html {
-    background-color: whitesmoke;
+
     height: 100%;
 }
 body {
@@ -7,22 +7,21 @@ body {
     margin: 0 auto;
     background-color: white;
     height: 100%;
-    box-shadow: 0px 0px 20px 1px grey;
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 /* CSS for the top 'peterwroot.co.uk' bar */
 #pageTopBar {
-    height: 40px;
+    height: 60px;
     line-height: 30px;
-    background-color: #212121;
-    color: whitesmoke;
     padding: 5px;
 }
 
 #pageTopBar a {
     text-decoration: none;
-    color: whitesmoke;
+    color: #212121;
 }
 
 #pageTopBar h4 {
@@ -31,12 +30,23 @@ body {
 
 .topBarNavItem {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 10px 12px;
+}
+
+#topBarHomeLink{
+    background-color: darkblue;
+    border-radius: 30px;
+    color: white;
 }
 
 #topBarHomeLink {
     float: left;
-    padding: 5px;
+    padding: 10px 20px;
+    color: white;
+}
+
+#topBarHomeLink a{
+    color: white;
 }
 
 #pageTopBarNavigation {
@@ -58,9 +68,9 @@ body {
     padding: 5px;
     height: 30px;
     margin: 0px;
-    background-color: #212121;
-    color: whitesmoke;
+    color: #212121;
     line-height: 20px;
+    margin-bottom: 20px;
 }
 
 #pageFooter p{
@@ -70,7 +80,7 @@ body {
 }
 
 #pageFooter a{
-    color: whitesmoke;
+    color: #212121;
 }
 
 hr{
