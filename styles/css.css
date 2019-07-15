@@ -1,0 +1,62 @@
+html {
+    font-family: 'Roboto Slab', serif;
+    
+    height: 100%;
+}
+
+body {
+    background-color: floralwhite;
+    padding: 50px;
+    color: #212121;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section{
+    border-top: 1px dotted lightgrey;
+}
+
+#title{
+    padding-bottom: 20px;
+    text-align: center;
+}
+#title a{
+    color: #212121;
+    text-decoration: none;
+}
+
+
+a{
+    color: #212121;
+}
+
+.centered{
+    text-align: center;
+}
+
+hr{
+    border: none;
+    background-color: lightgray;
+    height: 1px;
+}
+
+
+.post p{
+    float: right;
+        padding-left: 10px;
+    margin: 0px;
+    background-color: floralwhite;
+}
+.post a{
+    text-decoration: none;
+    padding-right: 10px;
+    float: left;
+    background-color: floralwhite;
+}
+.post{
+    height: 12px;
+
+    border-bottom: 1px dotted black;
+    
+    margin-bottom: 20px;
+}
