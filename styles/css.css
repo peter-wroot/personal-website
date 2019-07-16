@@ -13,11 +13,12 @@ body {
 }
 
 .section{
-    border-top: 1px dotted lightgrey;
-}
+
+    }
 
 #title{
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
     text-align: center;
 }
 #title a{
@@ -54,9 +55,17 @@ hr{
     background-color: floralwhite;
 }
 .post{
-    height: 12px;
+    height: 15px;
 
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted lightgray;
     
     margin-bottom: 20px;
+}
+
+.post-heading{
+    border-bottom: 1px dotted lightgray;
+}
+
+#spacer{
+    height: 100px;
 }

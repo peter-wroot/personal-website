@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles/css.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Peter Wroot</title>
+</head>
+
+<body>
+    <div id="title">
+        <a href="/index.html">peterwroot.co.uk</a>
+    </div>
+
+    <h3 class="centered">Homelab</h3>
+
+    <p>I've recently taken steps to reduce the overall footprint of my homelab without reducing the overall functionality. I'm trying to be more minimalistic, and simplifying my home server setup seemed like a good place to start. </p>
+
+
+    <p><b>Server:</b></p>
+
+    <p>The main workhorse of my homelab is a 2012 Mac Mini with an Intel Core i7, 16GB of RAM, running MacOS Mojave. Whilst this is a far cry from the powerful, rack-mounted servers that homelabbers are used to, it suits my needs perfectly: It's small, quiet, and power-efficient, whilst still having a decent amount of horsepower. The Mac Mini is responsible for running the following services:</p>
+
+    <ul>
+        <li><b>UniFi Controller</b> - for managing my UniFi router and access points.</li>
+        <li><b>Plex</b> - for streaming T.V. and movies.</li>
+        <li><b>Sonarr</b> - for finding releases of T.V. series </li>
+        <li><b>Radarr</b> - for finding releases of movies</li>
+        <li><b>Transmission</b> - a bittorrent client</li>
+        <li><b>Jackett</b> - additional sources for Sonarr and Radarr</li>
+    </ul>
+
+    <p>There is also an Apple USB SuperDrive connected to the Mac Mini, and iTunes has been configured to automatically rip any CD's it detects. I have the import preferences configured to rip CD's to AIF files for the highest quality audio.</p>
+
+    <p><b>Storage:</b></p>
+
+    <p>The storage for my homelab is provided by a HP Microserver running FreeNAS. This server has 4x2TB hard drives running in raid Z1. This server stores Time Machine backups of my MacBook Pro and the aforementioned Mac Mini, as well as the movies and T.V. that Plex serves.</p>
+
+    <p><b>Networking:</b></p>
+
+    <p>At the core of my home network lies the UniFi Security Gateway. This handles DHCP and DNS for the network, and also runs a VPN server so I can dial  in remotely. Two UniFi Access Points provide Wi-Fi coverage in my apartment, and switching is handled by a 24-port gigabit switch from TP-Link that I dug out of the bin at work. </p>
+    
+    <p><b>Looking to the future:</b></p>
+
+    <p>I'd like to replace the HP Microserver with something smaller and more power-efficient. I really like the look of the <a target="_blank" href="https://streacom.com/products/f1c-evo-chassis/">Streacom F1C Evo Chassis</a> as it has a very similar aesthetic to the Mac Mini. I like the idea of putting together a low-power, Mini-ITX system in this case with a pair of 4TB 2.5 inch drives in a mirrrored pair, installing FreeNAS and then using this as my Time Machine backup server.</p>
+
+    <p>My Mac Mini can take two 2.5 inch hard drives - it is currently equipped with a 1TB spinning disk, however I am contemplating swapping this out for a 265GB SSD boot volume, paired with a 2 or 3 Terabyte spinning disk so that I can move my Movies and T.V. off of the FreeNAS server and store them locally on the Mac.</p>
+
+    <p>The networking setup can be improved as well - I'd like to replace the switch with one of UniFi's switches as they tie in well with the Security Gateway, Access Points, and UniFi controller software.</p>
+    
+    <p><b>Conclusion:</b></p>
+
+    <p>The Mac Mini has replaced two full-size tower servers, which were both configured as VMWare ESXi hosts. Whilst I miss having the extra headroom and ability to spin up virtual machines on the fly, the new setup is far easier to maintain - and that's really what I was going for.</p>
+
+    
+    <div id="spacer">
+    
+    </div>
+
+
+
+    <div id="midsection" class="section">
+        <p class="centered"><b>What next?</b></p>
+
+        <p><i>Below is a list of all my previous posts on this website. You can also find out more <a href="/pages/about.html">about me</a>, or you can <a href="/pages/contact.html">get in touch</a>.</i></p>
+
+        <h3>2019</h3>
+
+        <div class="post">
+            <a href="/posts/homelab.html">Homelab</a>
+            <p><i>July 16th</i></p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</body></html>
+
