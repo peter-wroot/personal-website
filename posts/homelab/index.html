@@ -2,6 +2,21 @@
 <html>
 
 <head>
+    
+    <!-- Begin Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144047744-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144047744-1');
+    </script>
+    <!-- End Google Analytics -->
+    
     <link rel="stylesheet" href="/styles/css.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>Peter Wroot</title>
@@ -14,7 +29,7 @@
 
     <h3 class="centered">Homelab</h3>
 
-    <p>I've recently taken steps to reduce the overall footprint of my homelab without compromising the overall functionality. I'm trying to be more minimalistic, and simplifying my home server setup seemed like a good place to start. </p>
+    <p>I've recently taken steps to reduce the overall footprint of my homelab without compromising the overall functionality. I'm trying to reduce the amount of time and effort I spend working on it.</p>
 
 
     <p><b>Server:</b></p>
@@ -38,8 +53,8 @@
 
     <p><b>Networking:</b></p>
 
-    <p>At the core of my home network lies the UniFi Security Gateway. This handles DHCP and DNS for the network, and also runs a VPN server so I can dial  in remotely. Two UniFi Access Points provide Wi-Fi coverage in my apartment, and switching is handled by a 24-port gigabit switch from TP-Link that I dug out of the bin at work. </p>
-    
+    <p>At the core of my home network lies the UniFi Security Gateway. This handles DHCP and DNS for the network, and also runs a VPN server so I can dial in remotely. Two UniFi Access Points provide Wi-Fi coverage in my apartment, and switching is handled by a 24-port gigabit switch from TP-Link that I dug out of the bin at work. </p>
+
     <p><b>Looking to the future:</b></p>
 
     <p>I'd like to replace the HP Microserver with something smaller and more power-efficient. I really like the look of the <a target="_blank" href="https://streacom.com/products/f1c-evo-chassis/">Streacom F1C Evo Chassis</a> as it has a very similar aesthetic to the Mac Mini. I like the idea of putting together a low-power, Mini-ITX system in this case with a pair of 4TB 2.5 inch drives in a mirrrored pair, installing FreeNAS and then using this as my Time Machine backup server.</p>
@@ -47,14 +62,14 @@
     <p>My Mac Mini can take two 2.5 inch hard drives - it is currently equipped with a 1TB spinning disk, however I am contemplating swapping this out for a 265GB SSD boot volume, paired with a 2 or 3 Terabyte spinning disk so that I can move my Movies and T.V. off of the FreeNAS server and store them locally on the Mac.</p>
 
     <p>The networking setup can be improved as well - I'd like to replace the switch with one of UniFi's switches as they tie in well with the Security Gateway, Access Points, and UniFi controller software.</p>
-    
+
     <p><b>Conclusion:</b></p>
 
     <p>The Mac Mini has replaced two full-size tower servers, which were both configured as VMWare ESXi hosts. Whilst I miss having the extra headroom and ability to spin up virtual machines on the fly, the new setup is far easier to maintain - and that's really what I was going for.</p>
 
-    
+
     <div id="spacer">
-    
+
     </div>
 
 
