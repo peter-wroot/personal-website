@@ -1,3 +1,15 @@
+@media only screen and (max-width: 500px){
+
+    html{
+        font-size: 24pt;
+    }
+    body{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
+
 html {
     font-family: 'Roboto Slab', serif;
     height: 100%;
@@ -79,6 +91,7 @@ h3 {
     position: relative;
     overflow:visible;
     padding-top: 56.25%;
+    padding-bottom: 50px;
 }
 
 #iframe-container iframe{
