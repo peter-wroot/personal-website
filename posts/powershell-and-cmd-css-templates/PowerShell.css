@@ -1,4 +1,5 @@
 .PowerShellWindowContainer{
+
     max-width: 600px;
     padding: 0px;
     margin-top: 20px;
@@ -6,6 +7,7 @@
 
 }
 .PowerShellWindowTitleBar{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     border: 1px solid black;
     padding: 5px;
