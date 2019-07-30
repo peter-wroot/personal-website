@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <!-- Begin Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144047744-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144047744-1');
+
+    </script>
+    <!-- End Google Analytics -->
+
+    <link rel="stylesheet" href="/styles/css.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="PowerShell.css">
+    <link rel="stylesheet" href="CMD.css">
+    <title>Peter Wroot</title>
+</head>
+
+<body>
+    <div id="title">
+        <a href="/">peterwroot.co.uk</a>
+    </div>
+
+    <h3>PowerShell and CMD CSS Templates</h3>
+
+    <p>I was messing around with CSS today and made these PowerShell and CMD templates.</p>
+
+    <div class="PowerShellWindowContainer">
+        <div class="PowerShellWindowTitleBar">
+            <p id="PowerShellWindowTitleText">Administrator: Windows PowerShell</p>
+            <p id="PowerShellWindowControls">&#151;   &#9744;   X</p>
+        </div>
+        <div class="PowerShellWindowBody">
+            <p>PS C:\Windows\System32></p>
+        </div>
+    </div>
+
+    <div class="CMDWindowContainer">
+        <div class="CMDWindowTitleBar">
+            <p id="CMDWindowTitleText">Administrator: Command Prompt</p>
+            <p id="CMDWindowControls">&#151;   &#9744;   X</p>
+        </div>
+        <div class="CMDWindowBody">
+            <p>C:\Windows\System32></p>
+        </div>
+</div>
+
+    <p>You can download the templates here:</p>
+    <a href="PowerShell.css">PowerShell CSS</a>
+    <a href="PowerShell.html">PowerShell HTML</a>
+    <a href="CMD.css">CMD CSS</a>
+    <a href="CMD.html">CMD HTML</a>
+
+    <div id="spacer"></div>
+
+
+    <div id="iframe-container">
+        <iframe src="/pages/posts/" onload="resizeIframe(this)"></iframe>
+    </div>
+
+
+
+
+    <script src="/scripts/scripts.js"></script>
+
+
+
+</body>
+
+</html>
