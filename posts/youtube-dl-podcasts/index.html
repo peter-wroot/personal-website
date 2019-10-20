@@ -41,6 +41,7 @@
 
     <p>Below is the command I came up with:</p>
     
+    <div class="codeblock">
     <code>
     youtube-dl \                                    <br>
         --extract-audio \                           <br>
@@ -51,7 +52,7 @@
         --postprocessor-args "-metadata album='ALBUM' -metadata artist='ARTIST'" \ <br>
         "https://www.youtube.com/watch?v=PLAYLIST"
     </code>
-    
+    </div>
     <p>One thing that I had issues with was embedding the track number (pulled from where in the playlist the video is) into the mp3 metadata, instead  I have added it to the beginning of the name of each file - this doesn't bother me that much. I've also chosen to specify the album and artist metadata manually - I didn't like the results  I got when I extracted these from the YouTube video.  </p>
     
     <p></p>
@@ -60,9 +61,12 @@
     
     <p>Here's the entire command in one nice, copy-pastable chunk: </p>
     
-    <code>
+    <div class="codeblock">
+        <code>
     youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --embed-thumbnail -o "%(playlist_index)s %(title)s.%(ext)s" --postprocessor-args "-metadata album='ALBUM' -metadata artist='ARTIST'" "https://www.youtube.com/watch?v=PLAYLIST"
     </code>
+    </div>
+
     
     <div id="spacer"></div>
 
