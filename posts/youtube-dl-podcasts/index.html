@@ -48,7 +48,7 @@
         --audio-format mp3 \                        <br>
         --audio-quality 0 \                         <br>
         --embed-thumbnail \                         <br>
-        -o "%(playlist_index)s %(title)s.%(ext)s" \  <br>
+        --output "%(playlist_index)s %(title)s.%(ext)s" \  <br>
         --postprocessor-args "-metadata album='ALBUM' -metadata artist='ARTIST'" \ <br>
         "https://www.youtube.com/watch?v=PLAYLIST"
     </code>
@@ -63,7 +63,7 @@
     
     <div class="codeblock">
         <code>
-    youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --embed-thumbnail -o "%(playlist_index)s %(title)s.%(ext)s" --postprocessor-args "-metadata album='ALBUM' -metadata artist='ARTIST'" "https://www.youtube.com/watch?v=PLAYLIST"
+    youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --embed-thumbnail -output "%(playlist_index)s %(title)s.%(ext)s" --postprocessor-args "-metadata album='ALBUM' -metadata artist='ARTIST'" "https://www.youtube.com/watch?v=PLAYLIST"
     </code>
     </div>
 
