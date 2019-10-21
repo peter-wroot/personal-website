@@ -63,7 +63,7 @@
     
     <div class="codeblock">
         <code>
-    youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --embed-thumbnail -output "%(playlist_index)s %(title)s.%(ext)s" --postprocessor-args "-metadata album='ALBUM' -metadata artist='ARTIST'" "https://www.youtube.com/watch?v=PLAYLIST"
+    youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --embed-thumbnail --output "%(playlist_index)s %(title)s.%(ext)s" --postprocessor-args "-metadata album='ALBUM' -metadata artist='ARTIST'" "https://www.youtube.com/watch?v=PLAYLIST"
     </code>
     </div>
 
