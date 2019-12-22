@@ -28,7 +28,7 @@
         <a href="/">peterwroot.co.uk</a>
     </div>
 
-    <h3>youtube-dl YouTube playlist podcast downloader:</h3>
+    <h3 class="centered">youtube-dl YouTube playlist podcast downloader:</h3>
     
     <i>
     <p><B>Update: </B>I have now wrapped the youtube-dl command in a python script that correctly embeds the track number metadata - you can find the script on <a href="https://github.com/peter-wroot/playlist2podcast" target="_blank">GitHub</a></p>
@@ -73,10 +73,6 @@
     youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --embed-thumbnail --output "%(playlist_index)s %(title)s.%(ext)s" --postprocessor-args "-metadata album='ALBUM' -metadata artist='ARTIST'" "https://www.youtube.com/watch?v=PLAYLIST"
     </code>
     </div>
-
-    
-    <div id="spacer"></div>
-
 
     <div id="iframe-container">
         <iframe src="/pages/posts/" onload="resizeIframe(this)"></iframe>
