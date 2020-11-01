@@ -28,15 +28,10 @@
         <a href="/">peterwroot.co.uk</a>
     </div>
 
-    <h3 class="centered">youtube-dl YouTube playlist podcast downloader:</h3>
+    <p class="post-title">youtube-dl YouTube playlist podcast downloader:</p>
     
-    <i>
-    <p><B>Update: </B>I have now wrapped the youtube-dl command in a python script that correctly embeds the track number metadata - you can find the script on <a href="https://github.com/peter-wroot/playlist2podcast" target="_blank">GitHub</a></p>
-    <hr>
+    <p><e>Update: I have now wrapped the youtube-dl command in a python script that correctly embeds the track number metadata - you can find the script on <a href="https://github.com/peter-wroot/playlist2podcast" target="_blank">GitHub</a></e></p>
     
-    <p>Original article dated october 18th:</p>
-        </i>
-
     <p>I've recently had the want to download an entire YouTube playlist as audio files so that I can listen to them as a podcast. I figured the easiest way to do this would be with <a href="https://ytdl-org.github.io/youtube-dl/index.html" >youtube-dl</a>.</p>
     
     <p>I had a few things I wanted to accomplish with this:</p>
@@ -48,18 +43,17 @@
 
     <p>Below is the command I came up with:</p>
     
-    <div class="codeblock">
-    <code>
+    <p><e>
     youtube-dl \                                    <br>
         --extract-audio \                           <br>
         --audio-format mp3 \                        <br>
         --audio-quality 0 \                         <br>
         --embed-thumbnail \                         <br>
         --output "%(playlist_index)s %(title)s.%(ext)s" \  <br>
-        --postprocessor-args "-metadata album='ALBUM' -metadata artist='ARTIST'" \ <br>
+        --postprocessor-args "-metadata album=enter album here' -metadata artist='enter artist here'" \ <br>
         "https://www.youtube.com/watch?v=PLAYLIST"
-    </code>
-    </div>
+    </e></p>
+    
     <p>One thing that I had issues with was embedding the track number (pulled from where in the playlist the video is) into the mp3 metadata, instead  I have added it to the beginning of the name of each file - this doesn't bother me that much. I've also chosen to specify the album and artist metadata manually - I didn't like the results  I got when I extracted these from the YouTube video.  </p>
     
     <p></p>
@@ -68,22 +62,11 @@
     
     <p>Here's the entire command in one nice, copy-pastable chunk: </p>
     
-    <div class="codeblock">
-        <code>
-    youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --embed-thumbnail --output "%(playlist_index)s %(title)s.%(ext)s" --postprocessor-args "-metadata album='ALBUM' -metadata artist='ARTIST'" "https://www.youtube.com/watch?v=PLAYLIST"
-    </code>
-    </div>
 
-    <div id="iframe-container">
-        <iframe src="/pages/posts/" onload="resizeIframe(this)"></iframe>
-    </div>
-
-
-
-
-    <script src="/scripts/scripts.js"></script>
-
-
+    <p><e>
+    youtube-dl  --extract-audio --audio-format mp3 --audio-quality 0 --embed-thumbnail --output "%(playlist_index)s %(title)s.%(ext)s" --postprocessor-args "-metadata album=enter album here' -metadata artist='enter artist here'" "https://www.youtube.com/watch?v=PLAYLIST"
+</e>
+    </p>
 
 </body>
 

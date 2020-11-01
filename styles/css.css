@@ -1,143 +1,90 @@
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #212121;
-        color: whitesmoke;
-    }
 
-    a {
-        color: whitesmoke;
-    }
-
-    .post-heading {
-        border-bottom: 1px dotted #212121;
-    }
-
-    .post p {
-        background-color: #212121;
-    }
-
-    .post a {
-        background-color: #212121;
-        color: whitesmoke;
-    }
-
-    hr {
-        background-color: whitesmoke;
-    }
-
-    .post {
-        border-bottom: 1px dotted whitesmoke;
-    }
-
-    .codeblock {
-        background-color: whitesmoke;
-        color: black;
-
-    }
-
-}
-
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: whitesmoke;
-        color: #212121;
-    }
-
-    a {
-        color: #212121;
-    }
-
-    .post-heading {
-        border-bottom: 1px dotted lightgray;
-    }
-
-    .post p {
-        background-color: whitesmoke;
-    }
-
-    .post a {
-        background-color: whitesmoke;
-    }
-
-    hr {
-        background-color: #212121;
-    }
-
-    .post {
-        border-bottom: 1px dotted #212121;
-    }
-
-    .codeblock {
-        background-color: #212121;
-        color: whitesmoke;
-
-    }
-
-
-}
-
-.codeblock {
-    border-radius: 5px;
-    padding: 5px 10px 10px 10px;
-}
+/* Fucking around with fonts! */
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 html {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'VT323', monospace;
+    font-size: 16pt;
     height: 100%;
+    text-transform: lowercase;
+    
 }
 
 body {
-
-    max-width: 600px;
+    background-color: #212121;
+    color: #00FF66;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+body a{
+    color: #00FF66;
 }
 
 #title {
     padding-top: 50px;
     padding-bottom: 50px;
-    text-align: center;
+    text-align: right;
 }
 
 #title a {
-
     text-decoration: none;
 }
 
 
+/*  A little extra on the bottom 
+    of list items to help keep 
+    them separate   */
+li{
+    padding-bottom: 10px;
+}
 
-.centered {
-    text-align: center;
+.post-title {
+    padding-bottom: 25px;
+    border-bottom: 2px dotted #00FF66;
+}
+
+
+/* CSS for the post list on the homepage*/
+.post {
+    height: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px dotted #00FF66;
+}
+.post a {
+    text-decoration: none;
+    padding-left: 10px;
+    float: right;
+    background-color: #212121;
+    color: #00FF66;
+}
+.post p {
+    float: left;
+    padding-right: 10px;
+    margin: 0px;
+    background-color: #212121;
+
 }
 
 hr {
     border: none;
-
     height: 1px;
 }
 
-
-.post p {
-    float: right;
-    padding-left: 10px;
-    margin: 0px;
-
+/* 'e', for 'emphasis' */
+e{
+    color: #FFCC00;
+    text-transform: uppercase;
 }
 
-.post a {
-    text-decoration: none;
-    padding-right: 10px;
-    float: left;
+e a{
+        color: #FFCC00;
+
 }
-
-.post {
-    height: 15px;
-
-
-
-    margin-bottom: 20px;
-}
-
-
 
 #spacer {
     height: 100px;
@@ -149,22 +96,6 @@ hr {
 
 h3 {
     padding-bottom: 20px;
-}
-
-#iframe-container {
-    position: relative;
-    overflow: visible;
-    padding-top: 56.25%;
-    padding-bottom: 50px;
-}
-
-#iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border: 0;
-
 }
 
 hr{
